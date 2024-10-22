@@ -1,0 +1,117 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(135deg, #1a1a1a, #333333, #4d4d4d);
+  height: 100vh; /* Full viewport height */
+  color: white; /* Text color */
+  font-family: Arial, sans-serif; /* Font */
+}
+.container {
+  /* border: 2px solid white; */
+  width: 40%;
+  min-width: 450px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  padding: 30px 40px;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+#newTask {
+  background-color: #fff;
+  padding: 30px 20px;
+  border-radius: 8px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+#newTask input {
+  width: 70%;
+  height: 45px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  border: 2px solid #d1d3d4;
+  padding: 12px;
+  color: #111111;
+  position: relative;
+  border-radius: 8px;
+}
+#newTask input:focus {
+  outline: none;
+  border-color: #00336677;
+}
+#pushTask {
+  position: relative;
+  width: 80px;
+  height: 40px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  background: linear-gradient(135deg, #003366, #005f8d);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+}
+
+#pushTask:hover {
+  background: linear-gradient(135deg, #005f8d, #003366);
+  transform: scale(1.05); /* Slight scaling on hover */
+}
+
+#pushTask:active {
+  transform: scale(0.98); /* Slightly shrink on click for feedback */
+}
+
+#tasks {
+  background-color: #fff;
+  padding: 30px;
+  margin-top: 16px;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+.task {
+  background-color: #ffffff;
+  color: #111111;
+  height: 50px;
+  padding: 5px 10px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #d1d3d4;
+  cursor: pointer;
+}
+.delete {
+  font-size: 18px;
+  color: #fff;
+  background: linear-gradient(135deg, #003366, #005f8d);
+  padding: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.delete:hover {
+  background-color: #ffeded; /* Light red background on hover */
+  color: #ff1a1a; /* Brighter red on hover */
+}
+.completed{
+    text-decoration: line-through;
+}
