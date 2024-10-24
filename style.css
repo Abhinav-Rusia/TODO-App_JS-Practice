@@ -88,7 +88,8 @@ body {
 }
 .task {
   background-color: #ffffff;
-  color: #111111;
+  font-size: 18px;
+  color: black;
   height: 50px;
   padding: 5px 10px;
   margin-top: 10px;
@@ -99,7 +100,7 @@ body {
   cursor: pointer;
 }
 .delete {
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
   background: linear-gradient(135deg, #003366, #005f8d);
   padding: 6px;
@@ -112,6 +113,9 @@ body {
   background-color: #ffeded; /* Light red background on hover */
   color: #ff1a1a; /* Brighter red on hover */
 }
-.completed{
-    text-decoration: line-through;
+.completed {
+  text-decoration: line-through;
+  text-decoration-color: black;
+  text-decoration-style: solid;
+  text-decoration-thickness: 3px;
 }
